@@ -1,3 +1,6 @@
+#ifndef _robot_main_h_
+#define _robot_main_h_
+
 #include <GLUT/glut.h>
 
 #define Width 256
@@ -22,12 +25,10 @@
 
 #define HEIGHT_MAP_SIZE 1024
 
-enum { FRONT_NORMAL, BACK_NORMAL, LEFT_NORMAL, RIGHT_NORMAL, TOP_NORMAL, BOTTOM_NORMAL };
-
 unsigned char *my_texture[texNum];
 unsigned char *my_map;
 float scaleValue = 0.15f;// Scale Value For The Terrain ( NEW )
 
 void moveMeFlat(int direction);
 
-void square(GLfloat *pt1, GLfloat *pt2, GLfloat *pt3, GLfloat *pt4, GLfloat *ratio, GLfloat *normal);
+#endif
