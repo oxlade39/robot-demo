@@ -1,0 +1,239 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BCFAA8511BAEC25000A9663 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCFAA8311BAEC25000A9663 /* GLUT.framework */; };
+		4BCFAA8611BAEC25000A9663 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCFAA8411BAEC25000A9663 /* OpenGL.framework */; };
+		4BCFAA8F11BAEC6D000A9663 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BCFAA8E11BAEC6D000A9663 /* main.c */; };
+		4BCFAA9811BAECAB000A9663 /* reflective.raw in Resources */ = {isa = PBXBuildFile; fileRef = 4BCFAA9111BAECAB000A9663 /* reflective.raw */; };
+		4BCFAA9911BAECAB000A9663 /* robotmetal.raw in Resources */ = {isa = PBXBuildFile; fileRef = 4BCFAA9211BAECAB000A9663 /* robotmetal.raw */; };
+		4BCFAA9A11BAECAB000A9663 /* terrain2.raw in Resources */ = {isa = PBXBuildFile; fileRef = 4BCFAA9311BAECAB000A9663 /* terrain2.raw */; };
+		4BCFAA9B11BAECAB000A9663 /* wall2.raw in Resources */ = {isa = PBXBuildFile; fileRef = 4BCFAA9411BAECAB000A9663 /* wall2.raw */; };
+		4BCFAA9C11BAECAB000A9663 /* woodenfloor.raw in Resources */ = {isa = PBXBuildFile; fileRef = 4BCFAA9511BAECAB000A9663 /* woodenfloor.raw */; };
+		4BCFAA9D11BAECAB000A9663 /* woodroof.raw in Resources */ = {isa = PBXBuildFile; fileRef = 4BCFAA9611BAECAB000A9663 /* woodroof.raw */; };
+		4BCFAA9E11BAECAB000A9663 /* woodstrut.raw in Resources */ = {isa = PBXBuildFile; fileRef = 4BCFAA9711BAECAB000A9663 /* woodstrut.raw */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4BCFAA7A11BAEBD7000A9663 /* robot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = robot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BCFAA7D11BAEBD7000A9663 /* robot-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "robot-Info.plist"; sourceTree = "<group>"; };
+		4BCFAA8311BAEC25000A9663 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = /System/Library/Frameworks/GLUT.framework; sourceTree = "<absolute>"; };
+		4BCFAA8411BAEC25000A9663 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		4BCFAA8D11BAEC6D000A9663 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		4BCFAA8E11BAEC6D000A9663 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		4BCFAA9111BAECAB000A9663 /* reflective.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = reflective.raw; sourceTree = "<group>"; };
+		4BCFAA9211BAECAB000A9663 /* robotmetal.raw */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = robotmetal.raw; sourceTree = "<group>"; };
+		4BCFAA9311BAECAB000A9663 /* terrain2.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = terrain2.raw; sourceTree = "<group>"; };
+		4BCFAA9411BAECAB000A9663 /* wall2.raw */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wall2.raw; sourceTree = "<group>"; };
+		4BCFAA9511BAECAB000A9663 /* woodenfloor.raw */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = woodenfloor.raw; sourceTree = "<group>"; };
+		4BCFAA9611BAECAB000A9663 /* woodroof.raw */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = woodroof.raw; sourceTree = "<group>"; };
+		4BCFAA9711BAECAB000A9663 /* woodstrut.raw */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = woodstrut.raw; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BCFAA7811BAEBD7000A9663 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BCFAA8511BAEC25000A9663 /* GLUT.framework in Frameworks */,
+				4BCFAA8611BAEC25000A9663 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BCFAA6611BAEBA1000A9663 = {
+			isa = PBXGroup;
+			children = (
+				4BCFAA9011BAEC74000A9663 /* textures */,
+				4BCFAA8311BAEC25000A9663 /* GLUT.framework */,
+				4BCFAA8411BAEC25000A9663 /* OpenGL.framework */,
+				4BCFAA7B11BAEBD7000A9663 /* Products */,
+				4BCFAA7D11BAEBD7000A9663 /* robot-Info.plist */,
+				4BCFAA8D11BAEC6D000A9663 /* main.h */,
+				4BCFAA8E11BAEC6D000A9663 /* main.c */,
+			);
+			sourceTree = "<group>";
+		};
+		4BCFAA7B11BAEBD7000A9663 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BCFAA7A11BAEBD7000A9663 /* robot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BCFAA9011BAEC74000A9663 /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				4BCFAA9111BAECAB000A9663 /* reflective.raw */,
+				4BCFAA9211BAECAB000A9663 /* robotmetal.raw */,
+				4BCFAA9311BAECAB000A9663 /* terrain2.raw */,
+				4BCFAA9411BAECAB000A9663 /* wall2.raw */,
+				4BCFAA9511BAECAB000A9663 /* woodenfloor.raw */,
+				4BCFAA9611BAECAB000A9663 /* woodroof.raw */,
+				4BCFAA9711BAECAB000A9663 /* woodstrut.raw */,
+			);
+			name = textures;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BCFAA7911BAEBD7000A9663 /* robot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BCFAA8011BAEBD8000A9663 /* Build configuration list for PBXNativeTarget "robot" */;
+			buildPhases = (
+				4BCFAA7611BAEBD7000A9663 /* Resources */,
+				4BCFAA7711BAEBD7000A9663 /* Sources */,
+				4BCFAA7811BAEBD7000A9663 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = robot;
+			productName = robot;
+			productReference = 4BCFAA7A11BAEBD7000A9663 /* robot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BCFAA6811BAEBA1000A9663 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 4BCFAA6B11BAEBA1000A9663 /* Build configuration list for PBXProject "robot" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 0;
+			mainGroup = 4BCFAA6611BAEBA1000A9663;
+			productRefGroup = 4BCFAA7B11BAEBD7000A9663 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BCFAA7911BAEBD7000A9663 /* robot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BCFAA7611BAEBD7000A9663 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BCFAA9811BAECAB000A9663 /* reflective.raw in Resources */,
+				4BCFAA9911BAECAB000A9663 /* robotmetal.raw in Resources */,
+				4BCFAA9A11BAECAB000A9663 /* terrain2.raw in Resources */,
+				4BCFAA9B11BAECAB000A9663 /* wall2.raw in Resources */,
+				4BCFAA9C11BAECAB000A9663 /* woodenfloor.raw in Resources */,
+				4BCFAA9D11BAECAB000A9663 /* woodroof.raw in Resources */,
+				4BCFAA9E11BAECAB000A9663 /* woodstrut.raw in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BCFAA7711BAEBD7000A9663 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BCFAA8F11BAEC6D000A9663 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4BCFAA6911BAEBA1000A9663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		4BCFAA6A11BAEBA1000A9663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		4BCFAA7E11BAEBD7000A9663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "robot-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = robot;
+			};
+			name = Debug;
+		};
+		4BCFAA7F11BAEBD7000A9663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "robot-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = robot;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BCFAA6B11BAEBA1000A9663 /* Build configuration list for PBXProject "robot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BCFAA6911BAEBA1000A9663 /* Debug */,
+				4BCFAA6A11BAEBA1000A9663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BCFAA8011BAEBD8000A9663 /* Build configuration list for PBXNativeTarget "robot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BCFAA7E11BAEBD7000A9663 /* Debug */,
+				4BCFAA7F11BAEBD7000A9663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BCFAA6811BAEBA1000A9663 /* Project object */;
+}
