@@ -1,9 +1,33 @@
-/*
- *  main.h
- *  robot
- *
- *  Created by dan on 05/06/2010.
- *  Copyright 2010 __MyCompanyName__. All rights reserved.
- *
- */
+#include <GLUT/glut.h>
 
+#define Width 256
+#define Height 256
+#define Length Width*Height*3
+
+#define Width2 128
+#define Height2 128
+#define Length2 Width2*Height2*3
+
+#define X 0;
+#define Y 1;
+#define Z 2;
+#define LINES 1;
+#define POINTS 2;
+
+#define texNum 5
+
+#define TRUE 1
+#define FALSE 0
+#define DEG2RAD 6.28/360
+
+#define HEIGHT_MAP_SIZE 1024
+
+enum { FRONT_NORMAL, BACK_NORMAL, LEFT_NORMAL, RIGHT_NORMAL, TOP_NORMAL, BOTTOM_NORMAL };
+
+unsigned char *my_texture[texNum];
+unsigned char *my_map;
+float scaleValue = 0.15f;// Scale Value For The Terrain ( NEW )
+
+void moveMeFlat(int direction);
+
+void square(GLfloat *pt1, GLfloat *pt2, GLfloat *pt3, GLfloat *pt4, GLfloat *ratio, GLfloat *normal);

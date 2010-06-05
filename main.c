@@ -4,30 +4,6 @@
 #include <math.h>
 #include <GLUT/glut.h>
 
-#define Width 256
-#define Height 256
-#define Length Width*Height*3
-
-#define Width2 128
-#define Height2 128
-#define Length2 Width2*Height2*3
-
-#define X 0;
-#define Y 1;
-#define Z 2;
-#define LINES 1;
-#define POINTS 2;
-
-#define texNum 5
-
-#define TRUE 1
-#define FALSE 0
-#define DEG2RAD 6.28/360
-
-#define HEIGHT_MAP_SIZE 1024
-
-enum { FRONT_NORMAL, BACK_NORMAL, LEFT_NORMAL, RIGHT_NORMAL, TOP_NORMAL, BOTTOM_NORMAL };
-
 GLfloat colors[][3] = {{1.0,1.0,1.0},{1.0,0.0,0.0},
 {1.0,1.0,0.0}, {0.0,1.0,0.0}, {0.0,0.0,1.0}, 
 {1.0,0.0,1.0}, {1.0,1.0,1.0}, {0.0,1.0,1.0}};
@@ -61,10 +37,6 @@ GLfloat xrot = 0;
 GLfloat yrot = 0;
 GLfloat zoom = 0;
 GLfloat side = 0;
-
-unsigned char *my_texture[texNum];
-unsigned char *my_map;
-float scaleValue = 0.15f;// Scale Value For The Terrain ( NEW )
 
 GLint textname[texNum];
 
@@ -109,11 +81,6 @@ int waveTurn = TRUE;
 
 GLuint terrainDL = 1;
 GLuint worldDL = 2;
-
-// functions
-
-void moveMeFlat(int direction);
-void square(GLfloat *pt1, GLfloat *pt2, GLfloat *pt3, GLfloat *pt4, GLfloat *ratio, GLfloat *normal);
 
 void loadtexture(char *name, unsigned char *data, int w, int h, int le)
 {
