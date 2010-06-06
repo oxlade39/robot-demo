@@ -1,5 +1,6 @@
 #include "main.h"
 #include "normals.h"
+#include "shapes.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -345,42 +346,6 @@ void displayMenu(void)
 	printf("\n\nEnd Help Menu\n\n");		
 }
 
-void triangle(GLfloat *pt1, GLfloat *pt2, GLfloat *pt3, GLfloat *col, GLfloat *normal)
-{
-	
-	/* draw a polygon via list of vertices */
-	glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE, col);
-	
-	glBegin(GL_TRIANGLES);
-	//	  	  glNormal3fv(normal);
-	
-	glVertex3fv(pt1);	 	 
-	glVertex3fv(pt2);	 	 
-	glVertex3fv(pt3);
-	glEnd();
-}
-
-void textCylinder(GLfloat radius, GLfloat height)
-{
-	GLUquadric *cylinder =  gluNewQuadric();
-	
-	glPushMatrix();
-	glRotatef(90,1.0,0.0,0.);
-	gluQuadricTexture(cylinder, GL_TRUE);
-	gluCylinder(cylinder, radius, radius*0.5, height, 20, 20);
-	glPopMatrix();
-}
-
-void textSphere(GLfloat radius)
-{
-	GLUquadric *sphere =  gluNewQuadric();
-	
-	glPushMatrix();
-	gluQuadricTexture(sphere, GL_TRUE);
-	gluSphere(sphere, radius, 20, 20);
-	glPopMatrix();
-}
-
 
 void drawFloor(GLfloat *pt1, GLfloat *pt2, GLfloat *pt3, GLfloat *pt4, GLfloat *col)
 {
@@ -437,13 +402,12 @@ void drawStrut()
 {
 	//	  GLfloat bottom[4][3] = {{-8.0,-1.0,8.0},{-8.0,-1.0,7.5},{-7.5,-1.0,7.5},{-7.5,-1.0,8.0}};
 	//	  GLfloat top[4][3] = {{-8.0,1.0,8.0},{-8.0,1.0,7.5},{-7.5,1.0,7.5},{-7.5,1.0,8.0}};
-	
-	GLfloat pos[] = {0.0,-1.0,0.0};
-	GLfloat ratio[] = {1.0,1.0};
+	GLfloat strut_pos[] = {0.0,-1.0,0.0};
+	GLfloat strut_rot[] = {1.0, 1.0};
 	
 	glPushMatrix();
 	glRotatef(-180.0, 1.0, 0.0, 0.0);	 // front faces intoward the room
-	rectangle(pos, 0.5, 2, 0.5, ratio);
+	rectangle(strut_pos, 0.5, 2.0, 0.5, strut_rot);
 	glPopMatrix();
 }
 
